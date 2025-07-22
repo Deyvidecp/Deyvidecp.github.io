@@ -1,180 +1,282 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portfólio Profissional</title>
-    <meta name="description" content="Portfólio de [Seu Nome], Desenvolvedor Full Stack">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="assets/favicon.ico">
-</head>
-<body>
-    <!-- Cabeçalho com foto de perfil -->
+    <meta
+      name="description"
+      content="Portfólio de Deyvid Cavalcanti, Desenvolvedor Full Stack"
+    />
+    <meta name="author" content="Deyvid Cavalcanti" />
+    <meta property="og:title" content="Portfólio de Deyvid Cavalcanti" />
+    <meta
+      property="og:description"
+      content="Conheça meus projetos e habilidades como desenvolvedor Full Stack."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="imagens/ML30.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="imagens/favicon.ico" />
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <div class="profile-header">
-                <div class="profile-circle">
-                    <img src="imagens/ML30.jpg" alt="Foto de perfil de [Seu Nome]">
-                </div>
-                <h1>Meu Portfólio</h1>
-            </div>
-            
-            <nav class="nav-menu">
-                <button class="menu-button" aria-expanded="false" aria-controls="dropdown-menu">
-                    <i class="fas fa-bars"></i> Menu
-                </button>
-                <div class="dropdown-content" id="dropdown-menu">
-                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
-                    <a href="about.html"><i class="fas fa-user"></i> Sobre</a>
-                    <a href="#projects"><i class="fas fa-code"></i> Projetos</a>
-                    <a href="contact.html"><i class="fas fa-envelope"></i> Contato</a>
-                </div>
-            </nav>
+      <div class="header-container">
+        <div class="profile-header">
+          <div class="profile-circle">
+            <img
+              src="imagens/ML30.jpg"
+              alt="Foto de perfil de Deyvid Cavalcanti"
+            />
+          </div>
+          <h1>Meu Portfólio</h1>
         </div>
+        <nav class="nav-menu" aria-label="Menu principal">
+          <button
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="dropdown-menu"
+            aria-label="Abrir menu de navegação"
+          >
+            <i class="fas fa-bars"></i> Menu
+          </button>
+          <div class="dropdown-content" id="dropdown-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user"></i> Sobre</a>
+            <a href="#projects"><i class="fas fa-code"></i> Projetos</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contato</a>
+          </div>
+        </nav>
+      </div>
     </header>
-
     <main>
-        <!-- Seção Hero -->
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Olá, eu sou <span>Deyvid Cavalcanti</span></h2>
-                    <p>Desenvolvedor Full Stack | Especialista em Java e Web</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="button primary">
-                            <i class="fas fa-laptop-code"></i> Ver Projetos
-                        </a>
-                        <a href="assets/resume.pdf" class="button secondary" download>
-                            <i class="fas fa-file-download"></i> Baixar CV
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção de Projetos -->
-        <section id="projects" class="projects-section section">
-            <div class="container">
-                <h2 class="section-title">Projetos Recentes</h2>
-                <div class="projects-grid">
-                    <!-- Projeto 1 -->
-                    <article class="project-card">
-                        <a href="projetos/sistema-inventario.html" class="project-link" aria-label="Ver detalhes do Sistema de Inventário"></a>
-                        <div class="project-image">
-                            <img src="images/projeto1.jpg" alt="Tela do Sistema de Inventário">
-                        </div>
-                        <div class="project-info">
-                            <h3>Sistema de Inventário</h3>
-                            <p>Aplicativo CLI Java com operações CRUD para gerenciamento de estoque</p>
-                            <div class="tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">CLI</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 2 -->
-                    <article class="project-card">
-                        <a href="projetos/site-portfolio.html" class="project-link" aria-label="Ver detalhes do Site de Portfólio"></a>
-                        <div class="project-image">
-                            <img src="imagens/projeto2.jpg" alt="Layout do Site de Portfólio">
-                        </div>
-                        <div class="project-info">
-                            <h3>Site de Portfólio</h3>
-                            <p>Site estático responsivo desenvolvido com HTML, CSS e JavaScript</p>
-                            <div class="tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 3 -->
-                    <article class="project-card">
-                        <a href="projetos/aplicativo-web.html" class="project-link" aria-label="Ver detalhes do Aplicativo Web"></a>
-                        <div class="project-image">
-                            <img src="images/projeto3.jpg" alt="Interface do Aplicativo Web">
-                        </div>
-                        <div class="project-info">
-                            <h3>Aplicativo Web</h3>
-                            <p>Aplicação moderna com React e Node.js para gestão de tarefas</p>
-                            <div class="tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Habilidades -->
-        <section class="skills-section section">
-            <div class="container">
-                <h2 class="section-title">Habilidades Técnicas</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Front-end</h3>
-                        <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>JavaScript (ES6+)</li>
-                            <li>React.js</li>
-                            <li>Responsive Design</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-server"></i> Back-end</h3>
-                        <ul>
-                            <li>Java (Spring Boot)</li>
-                            <li>Node.js</li>
-                            <li>API REST</li>
-                            <li>Microservices</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Banco de Dados</h3>
-                        <ul>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>PostgreSQL</li>
-                            <li>Firebase</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+      <section id="home" class="hero-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Deyvid Cavalcanti</h3>
-                    <p>Desenvolvedor Full Stack</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Deyvidecp" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/deyvid-cavalcanti/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.instagram.com/cavalcanti.deyvid/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+          <div class="hero-content">
+            <h2>Olá, eu sou <span>Deyvid Cavalcanti</span></h2>
+            <p>Desenvolvedor Full Stack | Especialista em Java e Web</p>
+            <div class="hero-buttons">
+              <a href="#projects" class="button primary">
+                <i class="fas fa-laptop-code"></i> Ver Projetos
+              </a>
+              <a
+                href="#"
+                class="button secondary"
+                download
+                aria-label="Baixar currículo em PDF"
+              >
+                <i class="fas fa-file-download"></i> Baixar CV
+              </a>
             </div>
-            <div class="copyright">
-                <p>&copy; <span id="current-year"></span> [Seu Nome]. Todos os direitos reservados.</p>
-            </div>
+          </div>
         </div>
+      </section>
+      <section id="projects" class="projects-section section">
+        <div class="container">
+          <h2 class="section-title">Projetos Recentes</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <a
+                href="#"
+                class="project-link"
+                aria-label="Ver detalhes do Sistema de Inventário"
+              ></a>
+              <div class="project-image">
+                <img
+                  src="imagens/projeto1.jpg"
+                  alt="Tela do Sistema de Inventário"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Sistema de Inventário</h3>
+                <p>
+                  Aplicativo CLI Java com operações CRUD para gerenciamento de
+                  estoque
+                </p>
+                <div class="tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">CLI</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <a
+                href="#"
+                class="project-link"
+                aria-label="Ver detalhes do Site de Portfólio"
+              ></a>
+              <div class="project-image">
+                <img
+                  src="imagens/projeto2.jpg"
+                  alt="Layout do Site de Portfólio"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Site de Portfólio</h3>
+                <p>
+                  Site estático responsivo desenvolvido com HTML, CSS e
+                  JavaScript
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <a
+                href="#"
+                class="project-link"
+                aria-label="Ver detalhes do Aplicativo Web"
+              ></a>
+              <div class="project-image">
+                <img
+                  src="imagens/projeto3.jpg"
+                  alt="Interface do Aplicativo Web"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Aplicativo Web</h3>
+                <p>
+                  Aplicação moderna com React e Node.js para gestão de tarefas
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="skills-section section">
+        <div class="container">
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3><i class="fas fa-code"></i> Front-end</h3>
+              <ul>
+                <li>
+                  <i class="fab fa-html5 skill-logo" style="color: #e44d26"></i>
+                  HTML5
+                </li>
+                <li>
+                  <i
+                    class="fab fa-css3-alt skill-logo"
+                    style="color: #1572b6"
+                  ></i>
+                  CSS3
+                </li>
+                <li>
+                  <i
+                    class="fab fa-js-square skill-logo"
+                    style="color: #f7df1e"
+                  ></i>
+                  JavaScript (ES6+)
+                </li>
+                <li>
+                  <i class="fab fa-react skill-logo" style="color: #61dafb"></i>
+                  React.js
+                </li>
+                <li><span class="skill-logo">📱</span> Responsive Design</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Back-end</h3>
+              <ul>
+                <li>
+                  <i class="fab fa-java skill-logo" style="color: #007396"></i>
+                  Java (Spring Boot)
+                </li>
+                <li>
+                  <i
+                    class="fab fa-node-js skill-logo"
+                    style="color: #68a063"
+                  ></i>
+                  Node.js
+                </li>
+                <li><span class="skill-logo">🔗</span> API REST</li>
+                <li><span class="skill-logo">🧩</span> Microservices</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+              <ul>
+                <li>
+                  <i
+                    class="fas fa-database skill-logo"
+                    style="color: #00618a"
+                  ></i>
+                  MySQL
+                </li>
+                <li>
+                  <i class="fas fa-leaf skill-logo" style="color: #47a248"></i>
+                  MongoDB
+                </li>
+                <li>
+                  <i
+                    class="fas fa-database skill-logo"
+                    style="color: #336791"
+                  ></i>
+                  PostgreSQL
+                </li>
+                <li><span class="skill-logo">🔥</span> Firebase</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Deyvid Cavalcanti</h3>
+            <p>Desenvolvedor Full Stack</p>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/Deyvidecp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/deyvid-cavalcanti/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/cavalcanti.deyvid/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; <span id="current-year"></span> Deyvid Cavalcanti. Todos os
+            direitos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
-
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

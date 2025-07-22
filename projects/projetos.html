@@ -1,200 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projetos | Meu Portfólio Profissional</title>
-    <meta name="description" content="Portfólio de projetos de Deyvid Cavalcanti, Desenvolvedor Full Stack">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="assets/favicon.ico">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Portfólio de projetos de Deyvid Cavalcanti, Desenvolvedor Full Stack"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="icon" href="../imagens/favicon.ico" />
+  </head>
+  <body>
     <!-- Cabeçalho com menu -->
     <header>
-        <div class="header-container">
-            <div class="profile-header">
-                <div class="profile-circle">
-                    <img src="imagens/ML30.jpg" alt="Foto de perfil de Deyvid Cavalcanti">
-                </div>
-                <h1>Meu Portfólio</h1>
-            </div>
-            
-            <nav class="nav-menu">
-                <button class="menu-button" aria-expanded="false" aria-controls="dropdown-menu">
-                    <i class="fas fa-bars"></i> Menu
-                </button>
-                <div class="dropdown-content" id="dropdown-menu">
-                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
-                    <a href="about.html"><i class="fas fa-user"></i> Sobre</a>
-                    <a href="projetos.html" class="active"><i class="fas fa-code"></i> Projetos</a>
-                    <a href="contact.html"><i class="fas fa-envelope"></i> Contato</a>
-                </div>
-            </nav>
+      <div class="header-container">
+        <div class="profile-header">
+          <div class="profile-circle">
+            <img
+              src="../imagens/ML30.jpg"
+              alt="Foto de perfil de Deyvid Cavalcanti"
+            />
+          </div>
+          <h1>Meu Portfólio</h1>
         </div>
+
+        <nav class="nav-menu">
+          <button
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="dropdown-menu"
+          >
+            <i class="fas fa-bars"></i> Menu
+          </button>
+          <div class="dropdown-content" id="dropdown-menu">
+            <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="../about.html"><i class="fas fa-user"></i> Sobre</a>
+            <a href="projetos.html" class="active"
+              ><i class="fas fa-code"></i> Projetos</a
+            >
+            <a href="../contact.html"
+              ><i class="fas fa-envelope"></i> Contato</a
+            >
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!-- Seção Hero para Projetos -->
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Meus <span>Projetos</span></h2>
-                    <p>Confira abaixo alguns dos meus trabalhos mais recentes</p>
+      <!-- Seção Hero para Projetos -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h2>Meus <span>Projetos</span></h2>
+            <p>Confira abaixo alguns dos meus trabalhos mais recentes</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Projetos -->
+      <section id="projects" class="projects-section section">
+        <div class="container">
+          <h2 class="section-title">Projetos em Destaque</h2>
+
+          <!-- Filtros -->
+          <div class="projects-filters">
+            <button class="filter-button active" data-filter="all">
+              Todos
+            </button>
+            <button class="filter-button" data-filter="java">Java</button>
+            <button class="filter-button" data-filter="web">Web</button>
+            <button class="filter-button" data-filter="fullstack">
+              Full Stack
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Projeto 1 -->
+            <article class="project-card" data-category="java">
+              <a
+                href="https://github.com/Deyvidecp/sistema-inventario"
+                class="project-link"
+                aria-label="Ver repositório no GitHub"
+                target="_blank"
+                rel="noopener"
+              ></a>
+              <div class="project-image">
+                <img
+                  src="../imagens/projeto1.jpg"
+                  alt="Tela do Sistema de Inventário"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Sistema de Inventário</h3>
+                <p>
+                  Aplicativo CLI em Java para controle de estoque, com cadastro,
+                  consulta, atualização e remoção de produtos.
+                </p>
+                <div class="tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">CLI</span>
                 </div>
+                <a
+                  href="https://github.com/Deyvidecp/sistema-inventario"
+                  class="button secondary"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver no GitHub</a
+                >
+              </div>
+            </article>
+
+            <!-- Projeto 2 -->
+            <article class="project-card" data-category="web">
+              <a
+                href="https://github.com/Deyvidecp/portfolio-web"
+                class="project-link"
+                aria-label="Ver repositório no GitHub"
+                target="_blank"
+                rel="noopener"
+              ></a>
+              <div class="project-image">
+                <img
+                  src="../imagens/projeto2.jpg"
+                  alt="Layout do Portfólio Web"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Portfólio Web Responsivo</h3>
+                <p>
+                  Site pessoal responsivo para apresentação de projetos,
+                  habilidades e contato, desenvolvido com HTML, CSS e
+                  JavaScript.
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/Deyvidecp/portfolio-web"
+                  class="button secondary"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver no GitHub</a
+                >
+              </div>
+            </article>
+
+            <!-- Projeto 3 -->
+            <article class="project-card" data-category="fullstack">
+              <a
+                href="https://github.com/Deyvidecp/task-manager"
+                class="project-link"
+                aria-label="Ver repositório no GitHub"
+                target="_blank"
+                rel="noopener"
+              ></a>
+              <div class="project-image">
+                <img
+                  src="../imagens/projeto3.jpg"
+                  alt="Interface do App de Tarefas"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Task Manager App</h3>
+                <p>
+                  Aplicação web moderna para gestão de tarefas, com
+                  autenticação, integração em tempo real e backend Node.js.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+                <a
+                  href="https://github.com/Deyvidecp/task-manager"
+                  class="button secondary"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver no GitHub</a
+                >
+              </div>
+            </article>
+
+            <!-- Projeto 4 -->
+            <article class="project-card" data-category="java">
+              <a
+                href="projetos/api-rest.html"
+                class="project-link"
+                aria-label="Ver detalhes da API REST"
+              ></a>
+              <div class="project-image">
+                <img src="../imagens/projeto4.jpg" alt="Diagrama da API REST" />
+              </div>
+              <div class="project-info">
+                <h3>API REST</h3>
+                <p>
+                  API desenvolvida com Spring Boot para sistema de e-commerce
+                </p>
+                <div class="tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">PostgreSQL</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Habilidades -->
+      <section class="skills-section section">
+        <div class="container">
+          <h2 class="section-title">Tecnologias Utilizadas</h2>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3><i class="fas fa-code"></i> Front-end</h3>
+              <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Bootstrap</li>
+              </ul>
             </div>
-        </section>
-
-        <!-- Seção de Projetos -->
-        <section id="projects" class="projects-section section">
-            <div class="container">
-                <h2 class="section-title">Projetos em Destaque</h2>
-                
-                <!-- Filtros -->
-                <div class="projects-filters">
-                    <button class="filter-button active" data-filter="all">Todos</button>
-                    <button class="filter-button" data-filter="java">Java</button>
-                    <button class="filter-button" data-filter="web">Web</button>
-                    <button class="filter-button" data-filter="fullstack">Full Stack</button>
-                </div>
-                
-                <div class="projects-grid">
-                    <!-- Projeto 1 -->
-                    <article class="project-card" data-category="java">
-                        <a href="projetos/sistema-inventario.html" class="project-link" aria-label="Ver detalhes do Sistema de Inventário"></a>
-                        <div class="project-image">
-                            <img src="images/projeto1.jpg" alt="Tela do Sistema de Inventário">
-                        </div>
-                        <div class="project-info">
-                            <h3>Sistema de Inventário</h3>
-                            <p>Aplicativo CLI Java com operações CRUD para gerenciamento de estoque</p>
-                            <div class="tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">CLI</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 2 -->
-                    <article class="project-card" data-category="web">
-                        <a href="projetos/site-portfolio.html" class="project-link" aria-label="Ver detalhes do Site de Portfólio"></a>
-                        <div class="project-image">
-                            <img src="imagens/projeto2.jpg" alt="Layout do Site de Portfólio">
-                        </div>
-                        <div class="project-info">
-                            <h3>Site de Portfólio</h3>
-                            <p>Site estático responsivo desenvolvido com HTML, CSS e JavaScript</p>
-                            <div class="tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 3 -->
-                    <article class="project-card" data-category="fullstack">
-                        <a href="projetos/aplicativo-web.html" class="project-link" aria-label="Ver detalhes do Aplicativo Web"></a>
-                        <div class="project-image">
-                            <img src="images/projeto3.jpg" alt="Interface do Aplicativo Web">
-                        </div>
-                        <div class="project-info">
-                            <h3>Aplicativo Web</h3>
-                            <p>Aplicação moderna com React e Node.js para gestão de tarefas</p>
-                            <div class="tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 4 -->
-                    <article class="project-card" data-category="java">
-                        <a href="projetos/api-rest.html" class="project-link" aria-label="Ver detalhes da API REST"></a>
-                        <div class="project-image">
-                            <img src="images/projeto4.jpg" alt="Diagrama da API REST">
-                        </div>
-                        <div class="project-info">
-                            <h3>API REST</h3>
-                            <p>API desenvolvida com Spring Boot para sistema de e-commerce</p>
-                            <div class="tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">Spring Boot</span>
-                                <span class="tag">PostgreSQL</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Back-end</h3>
+              <ul>
+                <li>Java (Spring Boot)</li>
+                <li>Node.js</li>
+                <li>API REST</li>
+                <li>Microservices</li>
+              </ul>
             </div>
-        </section>
-
-        <!-- Seção Habilidades -->
-        <section class="skills-section section">
-            <div class="container">
-                <h2 class="section-title">Tecnologias Utilizadas</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Front-end</h3>
-                        <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>JavaScript (ES6+)</li>
-                            <li>React.js</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-server"></i> Back-end</h3>
-                        <ul>
-                            <li>Java (Spring Boot)</li>
-                            <li>Node.js</li>
-                            <li>API REST</li>
-                            <li>Microservices</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Banco de Dados</h3>
-                        <ul>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>PostgreSQL</li>
-                            <li>Firebase</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>Firebase</li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Deyvid Cavalcanti</h3>
-                    <p>Desenvolvedor Full Stack</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Deyvidecp" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/deyvid-cavalcanti/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.instagram.com/cavalcanti.deyvid/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; <span id="current-year"></span> Deyvid Cavalcanti. Todos os direitos reservados.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Deyvid Cavalcanti</h3>
+            <p>Desenvolvedor Full Stack</p>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/Deyvidecp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/deyvid-cavalcanti/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/cavalcanti.deyvid/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
+        <div class="copyright">
+          <p>
+            &copy; <span id="current-year"></span> Deyvid Cavalcanti. Todos os
+            direitos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- No projetos.html -->
-<script src="js/projects-filter.js"></script>
-<script src="js/script.js"></script>
-</body>
+    <script src="../js/projects-filter.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

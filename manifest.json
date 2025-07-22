@@ -1,0 +1,22 @@
+{
+  "name": "Portfólio de Deyvid Cavalcanti",
+  "short_name": "Portfólio Deyvid",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#e8f4f8",
+  "theme_color": "#224a5a",
+  "description": "Portfólio profissional de Deyvid Cavalcanti, Desenvolvedor Full Stack.",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "imagens/favicon.ico",
+      "sizes": "48x48 64x64 96x96 128x128 256x256",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "imagens/ML30.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}

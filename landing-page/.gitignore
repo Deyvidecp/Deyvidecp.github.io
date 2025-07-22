@@ -1,0 +1,11 @@
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Node (caso use futuramente)
+node_modules/ 
